@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 export const Title = styled.h1`
-  font-size: 48px;
+  font-size: 42px;
   color: #3a3a3a;
   line-height: 56px;
   max-width: 450px;
-  margin-top: 80px;
+  margin-top: 40px;
 `;
 
 export const Repositories = styled.div`
-  margin-top: 80px;
+  margin-top: 40px;
   max-width: 700px;
 
   a{

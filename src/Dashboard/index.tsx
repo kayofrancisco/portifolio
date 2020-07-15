@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 import api from '../services/api';
-import { Repositories, Header, } from './styles';
+import { Repositories, Header, Title } from './styles';
 
 
 interface Repository {
@@ -41,6 +41,7 @@ const Dashboard: React.FC = () => {
           </section>
         </div>
       </Header>
+      <Title>Meus projetos</Title>
       <Repositories>
         {repositories.map(({full_name, name, description, language, html_url}) => (
           <a key={full_name} href={html_url}>
